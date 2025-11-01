@@ -9,7 +9,7 @@ public class SavingsAccount {
   private Double balance;
   private final int ACCOUNT_NUMBER;
 
-  private static Double annualInterestRate = 0.05;
+  private static Double annualInterestRate = 0.00 ;
   private static Double monthlyInterestRate = annualInterestRate / 12;
 
   public String getAccountName() {
@@ -54,10 +54,8 @@ public class SavingsAccount {
     this.initialBalance = initialBalance;
   }
 
-  public Double addMonthlyInterest(){
-    
-    return getBalance(); 
-
+  public Double addMonthlyInterest(Double balance){
+    return balance * getMonthlyInterestRate(); 
   }
 
 }
