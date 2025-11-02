@@ -1,8 +1,7 @@
 package OOP_A1;
 
 import static java.lang.System.out;
-
-import OOP_A1.OOP_A1.Helper;
+import OOP_A1.Helper;
 
 public class SavingsAccount {
 
